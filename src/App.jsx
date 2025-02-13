@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -124,20 +129,25 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        {/* ✅ Default Home Page */}
+        <Route path="/" element={<Home />} />
+
+        {/* ✅ Pass recipes to Recipes & RecipeDetail */}
         <Route
-          exact
           path="/recipes"
           element={<Recipes sampleRecipes={sampleRecipes} />}
         />
-        <Route exact path="/favorites" element={<Favorites />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/contact" element={<Contact />} />
         <Route
-          exact
           path="/recipes/:recipeId"
           element={<RecipeDetail recipes={sampleRecipes} />}
         />
+
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+
+        {/* ✅ Redirect unknown routes to Home */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </Router>
