@@ -165,4 +165,41 @@ textarea {
     background: white; /* ✅ Keep input background white */
     color: black; /* ✅ Make text inside input black */
 }
+/* ✅ Ensure text inside the container is white */
+.container h1,
+.container h2,
+.container label {
+    color: white;
+}
+
+/* ✅ Ensure output text inside paragraphs is black */
+.container p {
+    color: black; /* ✅ Fix for white-on-white issue */
+}
+
+/* ✅ Ensure input fields are readable */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white; /* ✅ Keep input background white */
+    color: black; /* ✅ Ensure input text is black */
+}
+
+/* ✅ Ensure recipe output text is readable */
+.recipeItem p {
+    color: black; /* ✅ Ensures visibility inside output */
+}
+
+/* ✅ Ensure Ingredients and Instructions fields are properly styled */
+.ingredientsOutput,
+.instructionsOutput {
+    color: black !important; /* ✅ Force black text */
+    background: white !important; /* ✅ Ensures contrast */
+    padding: 8px;
+    border-radius: 4px;
+}
+
 
