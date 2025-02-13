@@ -1,0 +1,96 @@
+/* 🌍 Full-page background image with scrolling */
+.recipesPage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Allows scrolling */
+    overflow-y: auto; /* Enables scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* 📷 Background Image */
+.recipesPage::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: url("../assets/bowl.jpg") center/cover no-repeat;
+    opacity: 0.5; /* Makes the image half-transparent */
+    
+    z-index: -2;
+}
+
+/* 🎭 Dark Overlay */
+.recipesPage::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, 0.4); /* Dark transparent overlay */
+    
+    z-index: -1;
+}
+
+/* 🔍 **Search Bar Container** */
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* 🎨 **Styled Search Bar - Thicker & Fully Rounded** */
+.searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 30px; /* **Thicker input field** */
+    font-size: 20px;
+    font-weight: 600; /* **Slightly bolder text** */
+    
+    border: 3px solid #dcdcdc; /* Subtle border */
+    border-radius: 50px; /* **Completely round corners** */
+    background-color: white;
+    outline: none;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔥 Hover & Focus Effects */
+.searchInput:hover {
+    border: 3px solid #aaa;
+}
+
+.searchInput:focus {
+    border: 4px solid #4285f4; /* **Google Blue on Focus** */
+    box-shadow: 0px 8px 16px rgba(66, 133, 244, 0.3);
+}
+
+/* 📦 Recipe Card Styles */
+.recipeCard {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* 📷 Recipe Images */
+.recipeCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 📝 Recipe Text */
+.recipeCard h2,
+.recipeCard p {
+    color: black;
+}

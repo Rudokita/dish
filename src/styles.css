@@ -1,0 +1,16 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Mobile Navigation Fix */
+  @media (max-width: 600px) {
+    .navLinks {
+      display: none;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
