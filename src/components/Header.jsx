@@ -41,7 +41,7 @@ const Header = () => {
             to="/"
             className={styles.navTitle} // Apply styling
           >
-            DishDelights 🍕
+            PORTFOLIO-MICHALINA OBRYCKA
           </Typography>
           {/* Desktop Navigation */}
           <Box sx={{ display: { xs: "none", sm: "flex" }, gap: "1rem" }}>

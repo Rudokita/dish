@@ -1,5 +1,5 @@
 import React from "react";
-import foodImage from "../assets/food.jpg"; // ✅ Import image from assets
+import foodImage from "../assets/butterflies.png"; // ✅ Import image from assets
 
 const Contact = () => {
   return (
@@ -57,20 +57,20 @@ const Contact = () => {
         }}
       >
         <h1 style={{ fontSize: "3rem", color: "black", marginBottom: "20px" }}>
-          Contact Us
+          Contact Me
         </h1>
         <h4
           style={{ fontSize: "1.5rem", color: "black", marginBottom: "10px" }}
         >
-          📧 Email: dishdelights@gmail.com
+          📧 Email: michalina.obrycka@icloud.com
         </h4>
         <h4
           style={{ fontSize: "1.5rem", color: "black", marginBottom: "10px" }}
         >
-          📞 Phone: +45 56 56 56 56
+          📞 Phone: +45 52 90 43 20
         </h4>
         <h4 style={{ fontSize: "1.5rem", color: "black" }}>
-          📷 Instagram: @dishdelighs
+          📷 Instagram: @obryckart
         </h4>
       </div>
     </div>

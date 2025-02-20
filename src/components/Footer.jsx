@@ -17,7 +17,7 @@ const Footer = () => {
       }}
     >
       <Typography variant="body2">
-        © {new Date().getFullYear()} DishDelights. All rights reserved.
+        © {new Date().getFullYear()} Michalina Obrycka
       </Typography>
     </Box>
   );
