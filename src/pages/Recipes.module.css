@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     
-    background: url("../assets/bowl.jpg") center/cover no-repeat;
+    background: url("../assets/ipad.jpg") center/cover no-repeat;
     opacity: 0.5; /* Makes the image half-transparent */
     
     z-index: -2;

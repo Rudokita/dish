@@ -72,6 +72,9 @@ const Contact = () => {
         <h4 style={{ fontSize: "1.5rem", color: "black" }}>
           📷 Instagram: @obryckart
         </h4>
+        <h4 style={{ fontSize: "1.5rem", color: "black" }}>
+          🔗 LinkedIn: Michalina Obrycka
+        </h4>
       </div>
     </div>
   );

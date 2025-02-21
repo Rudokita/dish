@@ -118,13 +118,13 @@ const Recipes = ({ sampleRecipes }) => {
     <div className={styles.recipesPage}>
       <Container maxWidth="md" sx={{ textAlign: "center", py: 5 }}>
         <Typography variant="h1" gutterBottom>
-          Recipes
+          DRAWINGS
         </Typography>
         <div className={styles.searchContainer}>
           <input
             type="text"
             className={styles.searchInput}
-            placeholder="Search Recipes..."
+            placeholder="Search Alphabetically..."
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
@@ -142,10 +142,7 @@ const Recipes = ({ sampleRecipes }) => {
                     />
                     <Typography variant="h6">{recipe.title}</Typography>
                     <Typography variant="body2">
-                      <strong>Ingredients:</strong> {recipe.ingredients}
-                    </Typography>
-                    <Typography variant="body2">
-                      <strong>Instructions:</strong> {recipe.instructions}
+                      <strong>Technique:</strong> {recipe.ingredients}
                     </Typography>
                   </CardContent>
                 </Card>

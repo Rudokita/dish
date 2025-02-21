@@ -1,5 +1,7 @@
 import React from "react";
-import vegImage from "../assets/veg.jpg"; // ✅ Import the background image
+import vegImage from "../assets/code.png"; // Background image
+import dishDelightPDF from "../assets/dishdelight.pdf"; // Import DishDelight PDF
+import trueskovPDF from "../assets/trueskov.pdf"; // Import Trueskov PDF
 
 const About = () => {
   return (
@@ -7,24 +9,26 @@ const About = () => {
       style={{
         position: "relative",
         width: "100%",
-        minHeight: "100vh",
+        minHeight: "auto",
+        paddingTop: "100px",
+        paddingBottom: "150px",
         display: "flex",
-        justifyContent: "center",
+        flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
       }}
     >
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div
         style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
           width: "100%",
           height: "100%",
           backgroundImage: `url(${vegImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          position: "fixed",
+          top: 0,
+          left: 0,
           zIndex: -2,
         }}
       ></div>
@@ -32,54 +36,80 @@ const About = () => {
       {/* Semi-Transparent Dark Overlay */}
       <div
         style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
           width: "100%",
           height: "100%",
-          background: "rgba(0, 0, 0, 0.4)", // ✅ Dark overlay with 40% opacity
+          background: "rgba(0, 0, 0, 0.4)",
+          position: "fixed",
+          top: 0,
+          left: 0,
           zIndex: -1,
         }}
       ></div>
 
-      {/* White Box Behind Text */}
+      {/* White Box for PDF Links */}
       <div
         style={{
-          background: "rgba(255, 255, 255, 0.85)", // ✅ White with slight transparency
+          background: "rgba(255, 255, 255, 0.85)",
           padding: "30px 50px",
-          borderRadius: "12px", // ✅ Rounded corners
-          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)", // ✅ Soft shadow
+          borderRadius: "12px",
+          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
           maxWidth: "900px",
-          position: "relative",
+          width: "90%",
           zIndex: 1,
+          marginBottom: "50px",
         }}
       >
-        <h1 style={{ fontSize: "3rem", color: "black" }}>About DishDelights</h1>
-        <h4
+        <h1 style={{ fontSize: "3rem", color: "black" }}>
+          My University Exam Projects
+        </h1>
+
+        {/* List of PDF Links */}
+        <div style={{ marginTop: "20px", fontSize: "1.2rem" }}>
+          <p>
+            <a href={dishDelightPDF} target="_blank" rel="noopener noreferrer">
+              View DishDelight PDF
+            </a>
+          </p>
+          <p>
+            <a href={trueskovPDF} target="_blank" rel="noopener noreferrer">
+              View Trueskov PDF
+            </a>
+          </p>
+        </div>
+
+        {/* Side-by-Side PDF Previews */}
+        <div
           style={{
-            fontSize: "1.5rem",
-            textAlign: "center",
-            lineHeight: "1.6",
-            color: "black",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px", // ✅ Adds space between the PDFs
+            marginTop: "20px",
+            flexWrap: "wrap", // ✅ Ensures responsiveness on small screens
           }}
         >
-          Discover, create, and share your favorite recipes from around the
-          world. At DishDelights, we bring together food lovers from all walks
-          of life. Whether you’re a seasoned chef or just starting your culinary
-          journey, our platform is designed to help you explore a vast
-          collection of recipes that suit every taste and dietary preference.
-          <br />
-          <br />
-          Browse through our extensive recipe catalog, save your favorites, and
-          even contribute your own creations! Our easy-to-use interface ensures
-          that you can quickly find, manage, and enjoy the best dishes from
-          around the globe.
-          <br />
-          <br />
-          <strong>We are located at:</strong>
-          <br />
-          456 Culinary Avenue, Gourmet Town, 1010 Vienna, Austria
-        </h4>
+          {/* DishDelight PDF */}
+          <div style={{ flex: "1 1 45%", minWidth: "300px" }}>
+            <h3 style={{ color: "black" }}>Preview: DishDelight PDF</h3>
+            <iframe
+              src={dishDelightPDF}
+              width="100%"
+              height="400px"
+              style={{ border: "none" }}
+            ></iframe>
+          </div>
+
+          {/* Trueskov PDF */}
+          <div style={{ flex: "1 1 45%", minWidth: "300px" }}>
+            <h3 style={{ color: "black" }}>Preview: Trueskov PDF</h3>
+            <iframe
+              src={trueskovPDF}
+              width="100%"
+              height="400px"
+              style={{ border: "none" }}
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );

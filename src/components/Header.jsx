@@ -41,7 +41,7 @@ const Header = () => {
             to="/"
             className={styles.navTitle} // Apply styling
           >
-            PORTFOLIO-MICHALINA OBRYCKA
+            PORTFOLIO Michalina Obrycka
           </Typography>
           {/* Desktop Navigation */}
           <Box sx={{ display: { xs: "none", sm: "flex" }, gap: "1rem" }}>
@@ -60,7 +60,7 @@ const Header = () => {
                 },
               }}
             >
-              Recipes
+              Drawings
             </Button>
             <Button
               className={styles.navLink}
@@ -77,7 +77,7 @@ const Header = () => {
                 },
               }}
             >
-              Favorites
+              CV eng/dk
             </Button>
             <Button
               className={styles.navLink}
@@ -94,7 +94,7 @@ const Header = () => {
                 },
               }}
             >
-              About
+              UX/UI Projects
             </Button>
             <Button
               className={styles.navLink}

@@ -14,113 +14,114 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import RecipeDetail from "./pages/RecipeDetail";
 
-import pasta from "./assets/pasta.jpg";
-import curry from "./assets/curry.jpg";
-import pizza from "./assets/pizza.jpg";
-import avocado from "./assets/avocado.jpg";
-import pancakes from "./assets/pancakes.jpg";
-import caprese from "./assets/caprese.jpg";
-import garlic from "./assets/garlic.jpg";
-import shrimp from "./assets/shrimp.jpg";
-import cookies from "./assets/cookies.jpg";
-import stir from "./assets/stir.jpg";
-import alfredo from "./assets/alfredo.jpg";
-import wrap from "./assets/wrap.jpg";
+import twobugs from "./assets/twobugs.png";
+import bird from "./assets/bird.png";
+import bugred from "./assets/bugred.png";
+import butterflies from "./assets/butterflies.png";
+import scary from "./assets/scary.png";
+import sward from "./assets/sward.png";
+import dinosaur from "./assets/dinosaur.jpeg";
+import sixbugs from "./assets/sixbugs.png";
+import dog from "./assets/dog.jpeg";
+import cat from "./assets/cat.jpeg";
+import bluebug from "./assets/bluebug.png";
+import pig from "./assets/pig.jpeg";
 
 const sampleRecipes = [
   {
     id: 0,
-    title: "Spaghetti Carbonara",
-    ingredients: "Eggs, Pasta, Bacon",
-    instructions: "Cook pasta and mix with other ingredients.",
-    image: pasta,
+    title: "Two Lovebugs",
+    ingredients: "Digital in Adobe Fresco",
+
+    image: twobugs,
+    body: "I am an artist",
   },
   {
     id: 1,
-    title: "Chicken Curry",
-    ingredients: "Chicken, Curry Paste, Coconut Milk",
+    title: "Cowboy bird",
+    ingredients: "Digital in Adobe Fresco",
     instructions: "Cook chicken and add curry paste.",
-    image: curry,
+    image: bird,
+    body: "Hallo there",
   },
   {
     id: 2,
-    title: "Margherita Pizza",
-    ingredients: "Flour, Tomatoes, Mozzarella, Basil",
+    title: "Bug with the sun",
+    ingredients: "Digital in Adobe Fresco",
     instructions: "Make dough, add toppings, bake in oven.",
-    image: pizza,
+    image: bugred,
+    body: "hi hi hi",
   },
   {
     id: 3,
-    title: "Avocado Toast",
-    ingredients: "Bread, Avocado, Lemon, Salt",
+    title: "Butterfly collection",
+    ingredients: "Digital in Adobe Fresco",
     instructions: "Toast bread, mash avocado, mix with lemon and salt, serve.",
-    image: avocado,
+    image: butterflies,
   },
   {
     id: 4,
-    title: "Classic Pancakes",
-    ingredients: "Flour, Eggs, Milk, Sugar, Baking Powder, Butter",
+    title: "Monsters",
+    ingredients: "Digital in Adobe Fresco",
     instructions:
       "Mix all ingredients, cook on a heated pan until golden brown.",
-    image: pancakes,
+    image: scary,
   },
   {
     id: 5,
-    title: "Garlic Butter Shrimp",
-    ingredients: "Shrimp, Garlic, Butter, Lemon, Parsley",
+    title: "Bug collection",
+    ingredients: "Digital in Adobe Fresco",
     instructions:
       "Sauté garlic in butter, add shrimp, cook until pink, and drizzle with lemon juice.",
-    image: shrimp,
+    image: sixbugs,
   },
   {
     id: 6,
-    title: "Caprese Salad",
-    ingredients:
-      "Tomatoes, Mozzarella, Basil, Olive Oil, Balsamic Glaze, Salt, Pepper",
+    title: "Sward",
+    ingredients: "Digital in Adobe Fresco",
     instructions:
       "Slice tomatoes and mozzarella, layer with basil, drizzle with olive oil and balsamic glaze.",
-    image: caprese,
+    image: sward,
   },
   {
     id: 7,
-    title: "One-Pot Chicken Alfredo",
-    ingredients: "Chicken, Pasta, Heavy Cream, Parmesan, Garlic, Butter",
+    title: "Birthday Bug",
+    ingredients: "Digital in Adobe Fresco",
     instructions:
       "Cook chicken, add garlic, pasta, cream, and cheese. Simmer until pasta is tender.",
-    image: alfredo,
+    image: bluebug,
   },
   {
     id: 8,
-    title: "Veggie Stir-Fry",
-    ingredients:
-      "Broccoli, Bell Peppers, Carrots, Soy Sauce, Garlic, Sesame Oil",
+    title: "Snake Cat",
+    ingredients: "Poinliner pen on paper",
     instructions:
       "Stir-fry vegetables in sesame oil, add garlic and soy sauce, and cook until tender.",
-    image: stir,
+    image: cat,
   },
   {
     id: 9,
-    title: "Spicy Tuna Wrap",
-    ingredients: "Tortilla, Canned Tuna, Mayo, Sriracha, Lettuce, Avocado",
+    title: "Scary Pig",
+    ingredients: "Poinliner pen on paper",
     instructions:
       "Mix tuna with mayo and sriracha, spread on tortilla, add lettuce and avocado, then wrap.",
-    image: wrap,
+    image: pig,
   },
   {
     id: 10,
-    title: "Cheesy Garlic Bread",
-    ingredients: "Baguette, Butter, Garlic, Mozzarella Cheese, Parsley",
+    title: "Dinosaur",
+    ingredients: "Poinliner pen on paper",
     instructions:
       "Slice baguette, spread butter mixed with minced garlic, top with mozzarella, and bake at 180°C (350°F) for 10 minutes until golden and bubbly.",
-    image: garlic,
+    image: dinosaur,
   },
   {
     id: 11,
-    title: "Banana Oat Cookies",
-    ingredients: "Bananas, Oats, Honey, Cinnamon, Chocolate Chips",
+    title: "Dog",
+    ingredients: "Poinliner pen on paper",
     instructions:
       "Mash bananas, mix with oats, honey, cinnamon, and chocolate chips. Bake at 180°C (350°F) for 12 minutes.",
-    image: cookies,
+    image: dog,
   },
 ];
 
